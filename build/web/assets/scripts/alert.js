@@ -1,0 +1,1 @@
+window.alert("Cliente registrado con exito");

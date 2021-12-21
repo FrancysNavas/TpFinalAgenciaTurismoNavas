@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <servlet>
+        <servlet-name>Echo</servlet-name>
+        <servlet-class>servlet.Echo</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SvClienteLista</servlet-name>
+        <servlet-class>servlet.SvClienteLista</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SvEliminar</servlet-name>
+        <servlet-class>servlet.SvEliminar</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SvClienteModificar</servlet-name>
+        <servlet-class>servlet.SvClienteModificar</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SvClienteAlta</servlet-name>
+        <servlet-class>servlet.SvClienteAlta</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Echo</servlet-name>
+        <url-pattern>/Echo</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>SvUsuario</servlet-name>
+        <servlet-class>servlet.SvUsuario</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SvUsuario</servlet-name>
+        <url-pattern>/SvUsuario</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SvClienteLista</servlet-name>
+        <url-pattern>/SvClienteLista</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SvEliminar</servlet-name>
+        <url-pattern>/SvEliminar</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SvClienteModificar</servlet-name>
+        <url-pattern>/SvClienteModificar</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>SvClienteAlta</servlet-name>
+        <url-pattern>/SvClienteAlta</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
